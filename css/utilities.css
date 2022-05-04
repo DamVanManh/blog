@@ -1,0 +1,48 @@
+.bg-light {
+  background-color: #efefef;
+}
+
+.text-light {
+  color: #6a6a6a;
+  text-transform: uppercase;
+}
+
+.container {
+  max-width: 1100px;
+  margin: 0 auto;
+  padding: 15px;
+}
+
+.flex {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.responsive-direction {
+  flex-direction: column;
+}
+
+.hr {
+  border-top: 1px solid #999;
+  border-bottom: 1px solid #999;
+}
+
+.image-fit {
+  max-width: 100%;
+  height: auto;
+}
+
+.link-underline {
+  color: #11afe4;
+  font-style: italic;
+}
+
+.title-font {
+  font-family: "Libre Bodoni", serif;
+  font-weight: 500;
+}
+
+.title-margin {
+  margin: 0.8em 0 0.1em;
+}

@@ -1,0 +1,46 @@
+.square-btn {
+  min-width: 126px;
+  height: 35px;
+  border: none;
+  padding: 0 15px;
+  border-radius: 5px;
+  background-color: #11afe4;
+  cursor: pointer;
+  color: #fff;
+}
+
+.round-btn {
+  height: 35px;
+  border: 1px solid #11afe4;
+  color: #11afe4;
+  padding: 5 10px;
+  border-radius: 17px;
+  background-color: transparent;
+  cursor: pointer;
+}
+
+.link-btn {
+  padding: 0px;
+  width: fit-content;
+  border: none;
+  border-radius: 5px;
+  color: #fff;
+  background-color: #11afe4;
+  max-height: 30px;
+}
+
+.a-link-btn {
+  padding: 6px;
+  display: inline-block;
+  color: #fff;
+  text-decoration: none;
+
+  white-space: nowrap;
+  overflow: hidden;
+  text-overflow: ellipsis;
+}
+
+.light-btn {
+  border-color: black;
+  color: black;
+}

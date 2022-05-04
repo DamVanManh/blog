@@ -1,0 +1,51 @@
+/* main */
+.content {
+  gap: 15px;
+  display: grid;
+  grid-template-columns: 1fr;
+}
+
+@media (min-width: 576px) {
+  .content {
+    grid-template-columns: 2fr 1fr;
+  }
+}
+
+.main-post {
+  flex: 2;
+}
+
+.aside-post {
+  flex: 1;
+  align-self: flex-start;
+}
+
+.box-text {
+  border: solid 1px #999;
+  padding: 10px;
+  border-radius: 5px;
+  margin: 16px 0;
+  font-style: italic;
+}
+
+.pagination {
+  padding: 40px 0;
+}
+
+/* aside */
+.about {
+  padding: 10px 15px 20px;
+}
+
+.item-aside + .item-aside {
+  margin-top: 35px;
+}
+
+.name {
+  margin-top: 15px;
+  display: inline-block;
+}
+
+.company {
+  color: #11afe4;
+}
