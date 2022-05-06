@@ -19,13 +19,13 @@
     href="https://fonts.googleapis.com/css2?family=Inconsolata:wght@300;400;500&family=Libre+Bodoni:wght@400;500;600&display=swap"
     rel="stylesheet">
   <link rel="stylesheet" href="../css/index.css">
-  <link rel="stylesheet" href="../blog-post/index.css">
+  <link rel="stylesheet" href="../css/blog-post.css">
 </head>
 
 <body>
   <header class="container bg-light">
     <div class="top-header responsive-direction">
-      <button class="square-btn"><i class="fa fa-envelope"></i> SUBCRIBE</button>
+      <button class="square-btn subcribe"><i class="fa fa-envelope"></i> SUBCRIBE</button>
       <h1 class="title-font">The Front End Development Journey</h1>
       <div class="search">
         <input class="input-search" type="text" placeholder="Search...">
@@ -102,7 +102,7 @@
           <button class="round-btn">
             Older Post
           </button>
-          <button class="round-btn light-btn">
+          <button class="round-light-btn">
             Newer Post
           </button>
         </div>
@@ -110,9 +110,10 @@
       <aside class="aside-post">
         <div class="item-aside bg-light about">
           <h3 class="title-font title-margin"><i>About author</i></h3>
-          <img class="image-fit" src="../img/avatar.png" alt="author avatar">
-          <b class="name">Manh Dam</b>
-          <p class="company">FPT SoftWare</p>
+          <figure class="avatar-caption">
+            <img class="image-fit" src="../img/avatar.png" alt="author avatar">
+            <figcaption>Manh Dam - FPT SoftWare</figcaption>
+          </figure>
           <p>I graduated Industrial University of Ho Chi Minh City (IUH) – Electronic Engineering. I have 2 years of
             experience working with javascript and really like the simplicity and convenience of javascript, especially
             the es6 version.</p>

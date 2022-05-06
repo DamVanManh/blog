@@ -12,6 +12,10 @@
   padding: 15px 0;
 }
 
+.subcribe {
+  min-width: 133px;
+}
+
 .search {
   position: relative;
   align-self: left;
@@ -113,42 +117,6 @@
     "fourth-article fourth-article fifth-article fifth-article";
 }
 
-@media (min-width: 576px) {
-  .main {
-    grid-template-areas:
-      "first-article first-article second-article third-article"
-      "first-article first-article second-article third-article"
-      "first-article first-article fourth-article fifth-article"
-      "first-article first-article fourth-article fifth-article";
-  }
-
-  .top-header {
-    align-items: center;
-  }
-
-  .responsive-direction {
-    flex-direction: row;
-  }
-}
-
-@media (min-width: 992px) {
-  .main {
-    grid-template-areas:
-      "second-article first-article first-article fourth-article"
-      "second-article first-article first-article fourth-article"
-      "third-article first-article first-article fifth-article"
-      "third-article first-article first-article fifth-article";
-  }
-
-  .top-header {
-    align-items: center;
-  }
-
-  .responsive-direction {
-    flex-direction: row;
-  }
-}
-
 .first-article {
   grid-area: first-article;
 }
@@ -176,7 +144,7 @@
   justify-content: space-between;
 }
 
-.article > *:not(.image-fit) {
+.article > *:not(.image-fit, .square-btn) {
   padding: 0 10px;
 }
 
@@ -209,15 +177,17 @@
   flex-direction: column;
 }
 
-@media (min-width: 700px) {
-  .social {
-    flex-direction: row;
-  }
-}
-
 .social > *:not(.text-light) {
   color: #11afe4;
   font-size: 1.5em;
+}
+
+.continue-link {
+  display: inline-block;
+  color: #fff;
+  text-decoration: none;
+  white-space: nowrap;
+  font-size: 1em;
 }
 
 /* footer */
@@ -225,4 +195,45 @@
   margin: 0 auto;
   width: fit-content;
   padding: 25px 0;
+}
+
+/* responsive */
+@media (min-width: 576px) {
+  .main {
+    grid-template-areas:
+      "first-article first-article second-article third-article"
+      "first-article first-article second-article third-article"
+      "first-article first-article fourth-article fifth-article"
+      "first-article first-article fourth-article fifth-article";
+  }
+
+  .top-header {
+    align-items: center;
+  }
+
+  .responsive-direction {
+    flex-direction: row;
+  }
+}
+
+@media (min-width: 992px) {
+  .main {
+    grid-template-areas:
+      "second-article first-article first-article fourth-article"
+      "second-article first-article first-article fourth-article"
+      "third-article first-article first-article fifth-article"
+      "third-article first-article first-article fifth-article";
+  }
+}
+
+@media (min-width: 576px) and (max-width: 600px) {
+  .link-nav {
+    padding: 12px;
+  }
+}
+
+@media (min-width: 700px) {
+  .social {
+    flex-direction: row;
+  }
 }
